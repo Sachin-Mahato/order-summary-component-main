@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Red+Hat+Display&display=swap');
+
+/* || Reset */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* || Variables */
+:root {
+    /* || primary color */
+    --primary-color1:#e0e8ff;
+    --primary-color2: #3829e0;
+    --primary-color3:#fff;
+
+    /* || Secondary color */
+
+    --neutral-color1: #f5f7ff;
+    --neutral-color2: #7280a7;
+    --neutral-color3:#1f2f56;
+}
+
+/* || General styling */
+
+body {
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background: var(--primary-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 375px;
+    height: 550px;
+    background:var(--primary-color3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    border-radius: 25px;
+
+}
+/* || image */
+
+.logo > img {
+    max-width: 100%;
+    border-radius: 25px 25px 0 0;
+    
+    
+}
+/* || order summary */
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+    
+}
+
+.summary-details > h3 {
+    font-weight: 900;
+    color: var(--primary-colo2);
+    
+}
+.summary-details > p {
+    inline-size: 260px;
+    overflow-wrap: break-word;
+    color: var(--neutral-color2);
+}
+
+/* || Annual Plan */
+
+.subscription {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background:var(--neutral-color1);
+    margin: 0 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+.subscription > div > .plan {
+    font-weight: 900;
+    color: var(--neutral-color3);
+}
+.link {
+    text-decoration: none;
+    font-weight: 900;text-decoration: underline;
+    color: var(--primary-color2);
+    cursor: pointer;
+
+}
+.link:hover {
+    color: var(--neutral-color2);
+}
+
+/* || button */
+
+.button-section {
+    text-align: center;
+}
+
+.button {
+    padding:13px 60px;
+    color: var(--neutral-color1);
+    background-color: var(--primary-color2);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    
+}
+
+.button-section > p {
+    margin-top: 15px;
+    color: var(--neutral-color2);
+    font-weight: 900;
+    cursor: pointer;
+}
+.button-section > p:hover {
+    color: var(--neutral-color3);
+}
